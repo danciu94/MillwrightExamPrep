@@ -3,34 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get the best millwright exam prep package to pass your certification with confidence. Study guides, practice tests, and more!">
-    <meta name="keywords" content="millwright exam prep, millwright study guide, millwright certification, pass millwright exam">
-    <meta name="author" content="Your Name">
-    <title>Millwright Exam Prep Package - Ace Your Certification</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .header { background-color: #f4f4f4; padding: 20px; text-align: center; }
-        .content { max-width: 800px; margin: 20px auto; padding: 0 20px; }
-        .buy-button { background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; display: inline-block; }
-        @media (max-width: 600px) { .content { padding: 0 10px; } }
-    </style>
+    <meta name="description" content="Ace your Millwright Exam with our premium prep package featuring over 1,000 up-to-date questions and answers.">
+    <meta name="keywords" content="millwright exam prep, millwright study guide, millwright practice questions, certification prep, Canada">
+    <meta name="author" content="Millwright Exam Prep">
+    <title>Millwright Exam Prep - Pass with Confidence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>Millwright Exam Prep Package</h1>
-        <p>Everything You Need to Pass Your Millwright Certification</p>
-    </div>
-    <div class="content">
+    <header class="sticky">
+        <div class="logo">Millwright Exam Prep</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#purchase">Purchase</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pass Your Millwright Exam with Confidence</h1>
+            <p>Master the exam with our premium prep package: over 1,000 up-to-date questions and answers designed to ensure your success.</p>
+            <a href="#purchase" class="cta-button">Get Started for $89.99</a>
+        </div>
+    </section>
+
+    <section id="features">
         <h2>Why Choose Our Prep Package?</h2>
-        <p>Our expertly crafted study materials help you master the millwright exam with ease. Perfect for beginners and experienced tradespeople alike.</p>
-        <h2>What’s Included:</h2>
-        <ul>
-            <li>Comprehensive Study Guide (PDF)</li>
-            <li>Hundreds of Practice Questions with Answers</li>
-            <li>Pro Tips from Certified Millwrights</li>
-        </ul>
-        <h2>Price: $89.99</h2>
-        <a href="https://your-payment-link.com" class="buy-button">Buy Now</a>
-    </div>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>1,000+ Practice Questions</h3>
+                <p>Comprehensive, up-to-date questions covering every exam topic, with detailed answers to solidify your knowledge.</p>
+            </div>
+            <div class="feature">
+                <h3>Expertly Crafted Content</h3>
+                <p>Developed by industry professionals to align with the latest millwright certification standards in Canada.</p>
+            </div>
+            <div class="feature">
+                <h3>Proven Success</h3>
+                <p>Join thousands of successful candidates who passed their exam with our trusted study materials.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"This package was a game-changer! The questions were spot-on, and I passed my exam on the first try."</p>
+                <span>- John D., Certified Millwright</span>
+            </div>
+            <div class="testimonial">
+                <p>"The detailed answers helped me understand complex topics. Worth every penny!"</p>
+                <span>- Sarah M., Apprentice</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="purchase">
+        <h2>Secure Your Prep Package Today</h2>
+        <p><strong>Price: $89.99</strong></p>
+        <p>Get instant access to over 1,000 practice questions, detailed answers, and expert study guides. Your path to certification starts here.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+            <input type="submit" value="Buy Now with PayPal" class="cta-button">
+        </form>
+        <p class="secure">🔒 Secure checkout powered by PayPal</p>
+    </section>
+
+    <section id="contact">
+        <h2>Have Questions?</h2>
+        <p>Email us at <a href="mailto:support@millwrightexamprep.ca">support@millwrightexamprep.ca</a> or use the form below.</p>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Millwright Exam Prep. All rights reserved.</p>
+    </footer>
 </body>
 </html>
