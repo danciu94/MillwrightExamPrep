@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Prevent anchor links from being hidden under sticky header */
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -29,6 +29,13 @@ header.sticky {
     flex-wrap: wrap;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
@@ -37,10 +44,14 @@ header.sticky {
 
 .hamburger {
     display: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
 }
 
+/* --- Navigation --- */
 nav ul {
     list-style: none;
     display: flex;
@@ -220,9 +231,21 @@ footer {
 /* --- Responsive Fixes --- */
 @media (max-width: 768px) {
     header.sticky {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
         padding: 0.5rem 1rem;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
     }
 
     .hamburger {
@@ -246,14 +269,8 @@ footer {
     }
 
     nav ul li {
-        flex: 1 1 auto;
         text-align: left;
         padding-left: 1rem;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
     }
 
     .hero h1 {
