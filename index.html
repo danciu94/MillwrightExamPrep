@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ace your Millwright Exam with our premium prep package featuring over 1,000 up-to-date questions and answers.">
-    <meta name="keywords" content="millwright exam prep, millwright study guide, millwright practice questions, certification prep, Canada">
-    <meta name="author" content="Millwright Exam Prep">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ace your Millwright Exam with our premium prep package featuring over 1,000 up-to-date questions and answers." />
+    <meta name="keywords" content="millwright exam prep, millwright study guide, millwright practice questions, certification prep, Canada" />
+    <meta name="author" content="Millwright Exam Prep" />
     <title>Millwright Exam Prep - Pass with Confidence</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header class="sticky">
-        <div class="logo">Millwright Exam Prep</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#purchase">Purchase</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">Millwright Exam Prep</div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#purchase">Purchase</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="home" class="hero">
@@ -68,9 +72,9 @@
         <p><strong>Price: $89.99</strong></p>
         <p>Get access to over 1,000 practice questions, detailed answers, and expert study guides. Your path to certification starts here.</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
-            <input type="submit" value="Buy Now with PayPal" class="cta-button">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID" />
+            <input type="submit" value="Buy Now with PayPal" class="cta-button" />
         </form>
         <p class="secure">🔒 Secure checkout powered by PayPal</p>
     </section>
@@ -80,9 +84,9 @@
         <p>Send us a message below—we’ll get back to you shortly.</p>
         <form action="https://formspree.io/f/mzzewnkb" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required />
             <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required>
+            <input type="email" id="email" name="_replyto" required />
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit" class="cta-button">Send Message</button>
@@ -92,5 +96,15 @@
     <footer>
         <p>© 2025 Millwright Exam Prep. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
