@@ -178,6 +178,7 @@ section h2 {
     color: #555;
 }
 
+/* ✅ Fixes for layout/wrapping */
 #paypal-container-J7JTA7M8X7QSN {
     display: flex;
     justify-content: center;
@@ -188,6 +189,15 @@ section h2 {
     white-space: normal !important;
     word-break: normal !important;
     overflow-wrap: break-word;
+}
+
+#purchase h3 {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#paypal-container-J7JTA7M8X7QSN iframe {
+    max-width: 100% !important;
 }
 
 /* --- Forms --- */
