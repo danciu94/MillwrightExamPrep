@@ -355,3 +355,32 @@ footer {
 #purchase {
   text-align: center;
 }
+/* ✅ Fix Millwright Exam Package and Checkout button text layout */
+#paypal-container-J7JTA7M8X7QSN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#paypal-container-J7JTA7M8X7QSN * {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  display: inline-block !important;
+  text-align: center !important;
+  font-size: 1rem !important;
+}
+
+#paypal-container-J7JTA7M8X7QSN iframe {
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+/* Prevent vertical stacking of text in buttons */
+.paypal-button-label-container span,
+.paypal-button-text {
+  display: inline-block !important;
+  white-space: nowrap !important;
+}
