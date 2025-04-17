@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Fix for PayPal product title and price on one line */
+    #paypal-form-fields-container-J7JTA7M8X7QSN .item-header {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-direction: row !important;
+    }
+  </style>
 </head>
 <body>
   <header class="sticky">
@@ -69,13 +79,10 @@
     <h2>Secure Your Prep Package Today</h2>
     <p>Get access to over 1,000 practice questions, detailed answers, and expert study guides. Your path to certification starts here.</p>
 
-    <div class="purchase-info">
-      <span class="package-name">Millwright Exam Package</span>
-      <span class="price">$89.99 CAD</span>
-    </div>
-
     <!-- PayPal Hosted Button - Centered -->
-    <div id="paypal-container-J7JTA7M8X7QSN"></div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <div id="paypal-container-J7JTA7M8X7QSN"></div>
+    </div>
 
     <script 
       src="https://www.paypal.com/sdk/js?client-id=BAACQsRiZJimxrqeiNeaFe0J6F3lQnl_E-csl51sluLY7uaNs-VFVcS7_G8-PW38OSNOYB8MAIW6IAEPj8&components=hosted-buttons&disable-funding=venmo&currency=CAD">
