@@ -177,6 +177,17 @@ section h2 {
     color: #555;
 }
 
+/* >>> FIXED PayPal container formatting <<< */
+#paypal-container-J7JTA7M8X7QSN {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: fit-content;
+    max-width: 100%;
+}
+
 /* --- Forms --- */
 form {
     max-width: 600px;
