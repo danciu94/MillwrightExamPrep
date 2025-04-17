@@ -308,3 +308,29 @@ footer {
         padding: 2rem 1rem;
     }
 }
+/* 💥 Fix for Millwright Exam Package stacking issue */
+#purchase h3 {
+  display: inline;
+  white-space: nowrap;
+}
+
+/* 💥 Fix for Checkout text stacking issue inside PayPal */
+#purchase,
+#purchase * {
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  text-align: center;
+}
+
+/* 💥 Fix if PayPal buttons are within iframes or styled weird */
+#paypal-container-J7JTA7M8X7QSN iframe {
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+/* 💥 Extra styling to ensure package title stays inline */
+#purchase h3 span {
+  display: inline;
+  white-space: nowrap;
+}
