@@ -182,25 +182,30 @@ section h2 {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    text-align: center;
 }
 
 #paypal-container-J7JTA7M8X7QSN iframe {
     width: 100% !important;
     min-width: 300px;
+    margin: 0 auto;
 }
 
 #paypal-container-J7JTA7M8X7QSN .paypal-button-text {
     display: block !important;
     text-align: center !important;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 1.5;
-    padding: 5px 0;
+    padding: 8px 0;
+    width: 100%;
+    color: #003087;
+    font-weight: 700;
 }
 
 #paypal-container-J7JTA7M8X7QSN .paypal-button {
     display: block !important;
-    text-align: center;
-    margin-top: 10px;
+    text-align: center !important;
+    margin: 10px auto 0;
 }
 
 /* --- Forms --- */
@@ -313,5 +318,10 @@ footer {
 
     #paypal-container-J7JTA7M8X7QSN iframe {
         min-width: 250px;
+    }
+
+    #paypal-container-J7JTA7M8X7QSN .paypal-button-text {
+        font-size: 14px !important;
+        padding: 6px 0;
     }
 }
