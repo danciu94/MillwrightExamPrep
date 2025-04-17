@@ -334,3 +334,24 @@ footer {
   display: inline;
   white-space: nowrap;
 }
+/* Fix for Millwright Exam Package and PayPal Checkout button text alignment */
+#purchase h3,
+#purchase h3 * {
+  display: inline !important;
+  white-space: normal !important;
+  word-break: normal !important;
+}
+
+#purchase .paypal-button-text,
+#purchase .paypal-buttons,
+#purchase iframe,
+#purchase button {
+  white-space: normal !important;
+  word-break: normal !important;
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+#purchase {
+  text-align: center;
+}
