@@ -190,9 +190,10 @@ section h2 {
 }
 
 #paypal-container-J7JTA7M8X7QSN .paypal-button-text {
-    display: inline !important;
-    white-space: nowrap !important;
+    display: block !important;
+    text-align: center !important;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 #paypal-container-J7JTA7M8X7QSN .paypal-button {
