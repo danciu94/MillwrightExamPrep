@@ -86,11 +86,7 @@
         const checkButton = setInterval(() => {
           const buttonText = paypalContainer.querySelector('.paypal-button-text');
           if (buttonText) {
-            buttonText.innerHTML = `
-              <div style="text-align: center; width: 100%;">
-                <span>Millwright Exam Package $89.99 CAD</span>
-              </div>
-            `;
+            buttonText.textContent = 'Millwright Exam Package $89.99 CAD';
             buttonText.style.display = 'block';
             buttonText.style.textAlign = 'center';
             clearInterval(checkButton);
