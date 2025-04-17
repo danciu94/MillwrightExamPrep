@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -81,6 +80,26 @@
       paypal.HostedButtons({
         hostedButtonId: "J7JTA7M8X7QSN",
       }).render("#paypal-container-J7JTA7M8X7QSN");
+
+      // Customize PayPal button text to show "Millwright Exam Package" and "$89.99 CAD" on one line
+      document.addEventListener('DOMContentLoaded', () => {
+        const paypalContainer = document.getElementById('paypal-container-J7JTA7M8X7QSN');
+        const checkButton = setInterval(() => {
+          const buttonText = paypalContainer.querySelector('.paypal-button-text');
+          if (buttonText) {
+            // Set button text with flexbox for left and right alignment
+            buttonText.innerHTML = `
+              <div style="display: flex; justify-content: space-between; width: 100%;">
+                <span>Millwright Exam Package</span>
+                <span>$89.99 CAD</span>
+              </div>
+            `;
+            buttonText.style.display = 'block';
+            buttonText.style.textAlign = 'center';
+            clearInterval(checkButton);
+          }
+        }, 100);
+      });
     </script>
 
     <p class="secure">🔒 Secure checkout powered by PayPal</p>
@@ -109,24 +128,6 @@
     const navMenu = document.getElementById('nav-menu');
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
-    });
-
-    // Customize PayPal button text to center "Millwright Exam Package" and "$89.99 CAD"
-    document.addEventListener('DOMContentLoaded', () => {
-      const paypalContainer = document.getElementById('paypal-container-J7JTA7M8X7QSN');
-      const checkButton = setInterval(() => {
-        const buttonText = paypalContainer.querySelector('.paypal-button-text');
-        if (buttonText) {
-          // Replace the button text with custom HTML for centered lines
-          buttonText.innerHTML = `
-            <div style="text-align: center;">Millwright Exam Package</div>
-            <div style="text-align: center;">$89.99 CAD</div>
-          `;
-          buttonText.style.display = 'block';
-          buttonText.style.textAlign = 'center';
-          clearInterval(checkButton);
-        }
-      }, 100);
     });
   </script>
 </body>
