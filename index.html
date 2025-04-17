@@ -3,107 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Millwright Exam Prep</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #222;
-      color: white;
-      padding: 10px 20px;
-    }
-
-    .logo {
-      font-size: 1.5em;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 4px 0;
-    }
-
-    nav {
-      display: flex;
-      gap: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
-      }
-
-      nav {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        padding: 10px;
-      }
-
-      nav.show {
-        display: flex;
-      }
-    }
-
-    #paypal-container-J7JTA7M8X7QSN {
-      margin: 50px auto;
-      max-width: 300px;
-    }
-  </style>
-
-  <!-- PayPal SDK -->
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAACQsRiZjimxrqeiNeaFe2J06F3lQnJ_E-c5l5lsluL7YuaNs-VFVcS7_G8-PW3B0SNOYB8MAIW6IAEPJ8&components=hosted-buttons&disable-funding=venmo&currency=CAD"></script>
+  <meta name="description" content="Ace your Millwright Exam with our premium prep package featuring over 1,000 up-to-date questions and answers." />
+  <meta name="keywords" content="millwright exam prep, millwright study guide, millwright practice questions, certification prep, Canada" />
+  <meta name="author" content="Millwright Exam Prep" />
+  <title>Millwright Exam Prep - Pass with Confidence</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="https://www.paypal.com/sdk/js?client-id=BAACQsRiZJimxrqeiNeaFe0J6F3lOnl_E-c5l5lsuLY7uaNs-VFvcS7_G8-PW3B0SNOYB8MAIW6IAEPJ8&components=hosted-buttons&disable-funding=venmo&currency=CAD"></script>
 </head>
 <body>
-
-  <header>
+  <header class="sticky">
     <div class="logo">Millwright Exam Prep</div>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav id="mobileMenu">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Courses</a>
-      <a href="#">Contact</a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#purchase">Purchase</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- PayPal Button -->
-  <div id="paypal-container-J7JTA7M8X7QSN"></div>
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "J7JTA7M8X7QSN"
-    }).render("#paypal-container-J7JTA7M8X7QSN");
-  </script>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Pass Your Millwright Exam with Confidence</h1>
+      <p>Master the exam with our premium prep package: over 1,000 up-to-date questions and answers designed to ensure your success.</p>
+      <a href="#purchase" class="cta-button">Get Started for $89.99</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Why Choose Our Prep Package?</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <h3>1,000+ Practice Questions</h3>
+        <p>Comprehensive, up-to-date questions covering every exam topic, with detailed answers to solidify your knowledge.</p>
+      </div>
+      <div class="feature">
+        <h3>Expertly Crafted Content</h3>
+        <p>Developed by industry professionals to align with the latest millwright C of Q exams in Canada.</p>
+      </div>
+      <div class="feature">
+        <h3>Proven Success</h3>
+        <p>Join the many candidates who passed their exam with our trusted study materials.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"This package was a game-changer! The questions were spot-on, and I passed my exam as a result."</p>
+        <span>- John D., Certified Millwright, Guelph, Ontario</span>
+      </div>
+      <div class="testimonial">
+        <p>"The detailed answers helped me understand complex topics. Worth every penny!"</p>
+        <span>- Josh W., Certified Millwright, Calgary, Alberta</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="purchase">
+    <h2>Secure Your Prep Package Today</h2>
+    <p><strong>Price: $89.99</strong></p>
+    <p>Get access to over 1,000 practice questions, detailed answers, and expert study guides. Your path to certification starts here.</p>
+
+    <!-- PayPal Hosted Button -->
+    <div id="paypal-container-J7J7AM8X7QSN"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "J7J7AM8X7QSN",
+      }).render("#paypal-container-J7J7AM8X7QSN");
+    </script>
+
+    <p class="secure">🔒 Secure checkout powered by PayPal</p>
+  </section>
+
+  <section id="contact">
+    <h2>Have Questions?</h2>
+    <p>Send us a message below—we’ll get back to you shortly.</p>
+    <form action="https://formspree.io/f/mzzewnkb" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Millwright Exam Prep. All rights reserved.</p>
+  </footer>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('show');
-    }
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
