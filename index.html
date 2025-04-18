@@ -1,146 +1,127 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ace your Millwright Exam with our premium prep package featuring over 1,000 up-to-date questions and answers." />
-  <meta name="keywords" content="millwright exam prep, millwright study guide, millwright practice questions, certification prep, Canada" />
-  <meta name="author" content="Millwright Exam Prep" />
-  <title>Millwright Exam Prep - Pass with Confidence</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Millwright Exam Prep</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="sticky">
-    <div class="logo">Millwright Exam Prep</div>
-    <div class="hamburger" id="hamburger">☰</div>
-    <nav id="nav-menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#purchase">Purchase</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <h1>Millwright Exam Prep</h1>
+      <nav id="nav-menu">
+        <a href="#features">Features</a>
+        <a href="#purchase">Buy Now</a>
+        <a href="#testimonials">Testimonials</a>
+      </nav>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Pass Your Millwright Exam with Confidence</h1>
-      <p>Master the exam with our premium prep package: over 1,000 up-to-date questions and answers designed to ensure your success.</p>
-      <a href="#purchase" class="cta-button">Get Started for $89.99</a>
+  <section class="hero">
+    <div class="container">
+      <h2>Pass Your Millwright C of Q Exam</h2>
+      <p>Get access to the most relevant and up-to-date exam questions available today.</p>
+      <a href="#purchase" class="btn">Buy Now</a>
     </div>
   </section>
 
-  <section id="features">
-    <h2>Why Choose Our Prep Package?</h2>
-    <div class="features-grid">
-      <div class="feature">
-        <h3>1,000+ Practice Questions</h3>
-        <p>Comprehensive, up-to-date questions covering every exam topic, with detailed answers to solidify your knowledge.</p>
-      </div>
-      <div class="feature">
-        <h3>Expertly Crafted Content</h3>
-        <p>Developed by industry professionals to align with the latest millwright C of Q exams in Canada.</p>
-      </div>
-      <div class="feature">
-        <h3>Proven Success</h3>
-        <p>Join the many candidates who passed their exam with our trusted study materials.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2>What Our Users Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>"This package was a game-changer! The questions were spot-on, and I passed my exam as a result."</p>
-        <span>- John D., Certified Millwright, Guelph, Ontario</span>
-      </div>
-      <div class="testimonial">
-        <p>"The detailed answers helped me understand complex topics. Worth every penny!"</p>
-        <span>- Josh W., Certified Millwright, Calgary, Alberta</span>
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Real Exam Questions</h3>
+          <p>Questions pulled from actual C of Q exams currently in use.</p>
+        </div>
+        <div class="feature">
+          <h3>Affordable Pricing</h3>
+          <p>Get high-quality prep materials without breaking the bank.</p>
+        </div>
+        <div class="feature">
+          <h3>Dedicated Support</h3>
+          <p>Quick, helpful responses from someone who knows the trade.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="purchase">
-    <h2>Secure Your Prep Package Today</h2>
-    <p>Get access to over 1,000 practice questions, detailed answers, and expert study guides. Your path to certification starts here.</p>
-
-    <!-- PayPal Hosted Button - Centered -->
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
-      <div id="paypal-container-J7JTA7M8X7QSN"></div>
-    </div>
-
-    <script 
-      src="https://www.paypal.com/sdk/js?client-id=BAACQsRiZJimxrqeiNeaFe0J6F3lQnl_E-csl51sluLY7uaNs-VFVcS7_G8-PW38OSNOYB8MAIW6IAEPj8&components=hosted-buttons&disable-funding=venmo&currency=CAD">
-    </script>
-    <script>
-      paypal.HostedButtons({
-        hostedButtonId: "J7JTA7M8X7QSN",
-      }).render("#paypal-container-J7JTA7M8X7QSN");
-
-      document.addEventListener('DOMContentLoaded', () => {
-        const paypalContainer = document.getElementById('paypal-container-J7JTA7M8X7QSN');
-        const checkButton = setInterval(() => {
-          const buttonText = paypalContainer.querySelector('.paypal-button-text');
-          if (buttonText) {
-            buttonText.textContent = 'Millwright Exam Package $89.99 CAD';
-            buttonText.style.display = 'block';
-            buttonText.style.textAlign = 'center';
-            clearInterval(checkButton);
-          }
-        }, 100);
-      });
-    </script>
-
-    <p class="secure">🔒 Secure checkout powered by PayPal</p>
-  </section>
-
-  <section id="contact">
-    <h2>Have Questions?</h2>
-    <p>Send us a message below—we’ll get back to you shortly.</p>
-    <form action="https://formspree.io/f/mzzewnkb" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required />
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
-  </section>
-<section id="compare">
+  <!-- Compare Section -->
+  <section id="compare">
     <h2>How We Stack Up</h2>
     <div class="compare-grid">
-        <div class="compare-box us">
-            <h3>Millwright Exam Prep (Us)</h3>
-            <ul>
-                <li><strong>Fair, Affordable Price:</strong> Designed to help you succeed, not break the bank.</li>
-                <li><strong>1,000+ Real Exam Questions:</strong> Direct from actual C of Q exams in current use.</li>
-                <li><strong>Dedicated Support:</strong> Fast responses with trade-specific insight and guidance.</li>
-            </ul>
-        </div>
-        <div class="compare-box them">
-            <h3>Other Providers</h3>
-            <ul>
-                <li><strong>Inflated Pricing:</strong> “Discounts” off overpriced materials, focused on profits.</li>
-                <li><strong>Generic Question Banks:</strong> Industry-written, often not found on real exams.</li>
-                <li><strong>Limited Support:</strong> Generic help across multiple trades with little accuracy.</li>
-            </ul>
-        </div>
+      <div class="compare-box us">
+        <h3>Millwright Exam Prep (Us)</h3>
+        <ul>
+          <li><strong>Fair, Affordable Price:</strong> Designed to help you succeed, not break the bank.</li>
+          <li><strong>1,000+ Real Exam Questions:</strong> Direct from actual C of Q exams in current use.</li>
+          <li><strong>Dedicated Support:</strong> Fast responses with trade-specific insight and guidance.</li>
+        </ul>
+      </div>
+      <div class="compare-box them">
+        <h3>Other Providers</h3>
+        <ul>
+          <li><strong>Inflated Pricing:</strong> “Discounts” off overpriced materials, focused on profits.</li>
+          <li><strong>Generic Question Banks:</strong> Industry-written, often not found on real exams.</li>
+          <li><strong>Limited Support:</strong> Generic help across multiple trades with little accuracy.</li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Users Say</h2>
+      <blockquote>
+        “This was exactly what I needed. The questions were spot on and I passed my C of Q on the first try!”
+      </blockquote>
+      <cite>— Jordan M., Licensed Millwright</cite>
+    </div>
+  </section>
+
+  <section id="purchase" class="purchase">
+    <div class="container">
+      <h2>Get Started Now</h2>
+      <p>Access the full question bank for only <strong>$49.99 CAD</strong></p>
+      <div id="paypal-button-container"></div>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2025 Millwright Exam Prep. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Millwright Exam Prep. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD"></script>
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
+    paypal.Buttons({
+      style: {
+        layout: 'horizontal',
+        color:  'gold',
+        shape:  'pill',
+        label:  'buynow'
+      },
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '49.99'
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+      }
+    }).render('#paypal-button-container');
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-menu').classList.toggle('active');
     });
   </script>
 </body>
